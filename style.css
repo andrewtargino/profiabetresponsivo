@@ -53,7 +53,26 @@ body{
     color: rgb(117, 117, 117);
 }
 .botao-app{
+    display: flex;
     padding-top: 10px;
+    flex-direction: row;
+    gap: 20px;
+}
+.botao-mobile{
+    width: 140px;
+    height: 45px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.texto-botao{
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
 }
 .segunda-pagina{
     height: 60vh;
@@ -134,6 +153,27 @@ h5{
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, rgba(82,23,137,1) 0%, rgba(49,14,81,1) 28%, rgba(21,6,35,1) 72%);    
+}
+.terceira-pagina{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+.top-center{
+    display: flex;
+}
+.top-center-box{
+    display: flex;
+    width: 350px;
+    height: 200px;
+    background-color: rgb(141, 3, 75);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
 }
 /* mobile */
 @media (max-width:768px){
@@ -400,8 +440,7 @@ h5{
         .top-left{
             width: 100%;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;            
+            flex-direction: row;      
         }
         .text-center{
             font-size: 40px;
@@ -508,4 +547,21 @@ h5{
         .seta{
             display: none;
         }
+        .box1, .box3{
+            display: flex;
+            padding-top: 60px;
+        }
+        .box-icon1, .box-icon3{
+            display: flex;
+            position: absolute;
+            top: 20px;
+            left: 90px;
+        }
+        .box-icon2{
+            display: flex;
+            position: absolute;
+            top: -30px;
+            left: 90px;
+        }
 }
+
