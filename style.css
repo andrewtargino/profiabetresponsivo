@@ -232,16 +232,9 @@ h5{
     padding-top: 10px;
     src: url('./ProductSans-BlackItalic.ttf');
 }
-.quarta-pagina-box{
-    display: flex;
-    gap:20px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
 .box-esportes{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 80px;
     height: 60px;
     background-color: white;
@@ -250,6 +243,50 @@ h5{
     align-items: center;
     color: rgb(51, 51, 51);
     font-size: 12px;
+}
+.footer{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(0, 0, 58);
+    flex-direction: column;
+}
+.footer-parte1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista-footer{
+    color: rgb(200, 200, 200);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 10px 40px;
+    justify-content: center;
+    font-size: 12px;
+}
+.box-msg{
+    padding-left: 5px;
+    width: 90%;
+    padding-top: 10px;
+}
+.footer-parte2{
+    display: flex;
+    color: white;
+    font-size: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.footer-parte2 span{
+    padding-left: 5px;
+    color: rgb(200, 200, 200);
 }
 /* mobile */
 @media (max-width:768px){
@@ -355,6 +392,13 @@ h5{
             margin-top: 40px;
             left: 150px;
             opacity: 40%;
+        }
+        .quarta-pagina-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:10px;
+            padding: 20px 40px;
         }
 }
 /* tablet */
@@ -676,7 +720,14 @@ h5{
         .imagem-roleta{
             position: absolute;
             right: 280px;
-            top: 1780px;
+            top: 1680px;
         }    
+        .quarta-pagina-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+            padding-top: 20px;
+        }
 }
 
